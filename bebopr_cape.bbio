@@ -1,0 +1,32 @@
+# File generated with BB pin configurator
+# title: BeBoPr
+overlay cape-bone-iio
+overlay cape-universala
+P8_7 low #ESTOP Out
+P8_8 gpio #BeBoPr enable new
+P8_9 in #ESTOP In
+P8_10 gpio #Machine Power
+P8_19 low #E_ENA New 
+P8_27 low #Z_STP
+P8_28 low #Z_ENA
+P8_29 low #Z_DIR
+P8_30 low #E_STP
+P8_31 in #X_MIN
+P8_32 in #X_MAX
+P8_33 in #Y_MAX
+P8_34 low #E_DIR new
+P8_35 in #Y_MIN
+P8_36 low #J4_PWM
+P8_37 in #Z_MAX
+P8_38 in #Z_MIN
+P8_39 low #Y_DIR
+P8_40 low #Y_ENA # now PWM_1
+P8_41 low #X_ENA
+P8_42 low #Y_STP
+P8_43 low #X_STP
+P8_44 low #X_DIR
+P8_45 low #J3_PWM
+P8_46 low #J2_PWM
+
+P9_91 in
+P9_92 in
