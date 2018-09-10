@@ -32,9 +32,10 @@ hal.addf('motion-controller', 'servo-thread')
 for i in range(3):
     base.setup_stepper(section='AXIS_%i' % i, axisIndex=i, stepgenIndex=i, thread='servo-thread')
 
-servo.setup_servo_axis(servoIndex=0,section='AXIS_3',axisIndex=3,pwm='hpg.pwmgen.00.out.00', thread='servo-thread')
-hal.Pin('motion.digital-out-10').link('mirror-deploy')
-servo.setup_servo_toggle(servoIndex=1,section='MIRROR',pwm='hpg.pwmgen.00.out.01', selectSignal='mirror-deploy', thread='servo-thread')
+servo.setup_servo_axis(servoIndex=0,section='AXIS_5',axisIndex=5,pwm='hpg.pwmgen.00.out.00', thread='servo-thread')
+servo.setup_servo_axis(servoIndex=1,section='AXIS_3',axisIndex=3,pwm='hpg.pwmgen.00.out.01', thread='servo-thread')
+#hal.Pin('motion.digital-out-10').link('mirror-deploy')
+#servo.setup_servo_toggle(servoIndex=1,section='MIRROR',pwm='hpg.pwmgen.00.out.01', selectSignal='mirror-deploy', thread='servo-thread')
 
 #errorSignals = ['temp-hw-error', 'watchdog-error', 'hbp-error']
 errorSignals = []
